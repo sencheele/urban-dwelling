@@ -18,5 +18,7 @@
     background-color: var(--color-dark);
     box-shadow: 0 -6px var(--color-dark), 0 6px var(--color-dark);
     box-shadow: 0 -6px #231815, 0 6px #231815;
+    -webkit-box-shadow: 0 -6px var(--color-dark), 0 6px var(--color-dark);
+    -webkit-box-shadow: 0 -6px #231815, 0 6px #231815;
   }
 }
