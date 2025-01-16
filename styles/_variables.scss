@@ -22,7 +22,12 @@
     --container-width: 1240px;
   }
 
+  @include tablet {
+    --section-padding-y: 50px;
+  }
+
   @include mobile {
     --container-padding-x: 35px;
+    --section-padding-y: 40px;
   }
 }
