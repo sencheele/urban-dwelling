@@ -16,6 +16,6 @@
     width: 60%;
     height: 2px;
     background-color: var(--color-dark);
-    box-shadow: 0 -6px, 0 6px;
+    box-shadow: 0 -6px var(--color-dark), 0 6px var(--color-dark);
   }
 }
