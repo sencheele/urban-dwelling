@@ -135,9 +135,15 @@ svg * {
     --container-width: 1240px;
   }
 }
+@media (max-width: 1023.9px) {
+  :root {
+    --section-padding-y: 50px;
+  }
+}
 @media (max-width: 767.9px) {
   :root {
     --container-padding-x: 35px;
+    --section-padding-y: 40px;
   }
 }
 
@@ -234,8 +240,8 @@ a {
   width: 60%;
   height: 2px;
   background-color: var(--color-dark);
-  -webkit-box-shadow: 0 -6px, 0 6px;
-          box-shadow: 0 -6px, 0 6px;
+  -webkit-box-shadow: 0 -6px var(--color-dark), 0 6px var(--color-dark);
+          box-shadow: 0 -6px var(--color-dark), 0 6px var(--color-dark);
 }
 
 .search {
