@@ -1,0 +1,61 @@
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section {
+  padding-block: var(--section-padding-y);
+}
+
+.main-title {
+  padding-bottom: 40px;
+  font-family: Korataki;
+  font-size: 44px;
+
+  @include desktop {
+    font-size: 40px;
+  }
+
+  @include tablet {
+    font-size: 32px;
+  }
+
+  @include mobile {
+    padding-bottom: 24px;
+    font-size: 24px;
+  }
+}
+
+// h1, h2, h3, h4 {
+//   font-weight: 500;
+// }
+
+// h1 .h1 {
+//   @include fluid-text(60, 43);
+// }
+
+// h2 .h2 {
+//   @include fluid-text(40, 36);
+// }
+
+// h3 .h3 {
+//   @include fluid-text(30, 26);
+// }
+
+// h4 .h4 {
+//   @include fluid-text(20, 18);
+// }

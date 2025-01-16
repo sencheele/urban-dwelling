@@ -1,0 +1,28 @@
+:root {
+  --color-dark: #231815;
+  --color-dark-basket: #000;
+  --color-dark-footer: #0C0C0C;
+  --color-light: #fff;
+  --color-gray: #808080;
+  --color-gray-light: #F5F5F5;
+  --color-accent: #E45302;
+
+  --border-radius: 20px;
+
+  --font-family-base: Lato, sans-serif;
+
+  --container-width: 1400px;
+  --container-padding-x: 44px;
+
+  --section-padding-y: 60px;
+
+  --transition-duration: 0.3s;
+
+  @include desktop {
+    --container-width: 1240px;
+  }
+
+  @include mobile {
+    --container-padding-x: 35px;
+  }
+}

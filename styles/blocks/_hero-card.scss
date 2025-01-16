@@ -1,0 +1,103 @@
+.hero-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 16px;
+
+  @include mobile {
+    row-gap: 10px;
+  }
+
+  @include hover {
+    .hero-card__link {
+      opacity: 1;
+    }
+  }
+
+  &__image {
+    border-radius: 20px;
+
+    @include mobile {
+      border-radius: 10px;
+    }
+  }
+
+  &__special-offer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 8px 40px;
+    border-radius: 30px;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+
+    @include mobile {
+      padding: 2px 14px;
+      font-size: 14px;
+    }
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    color: var(--color-dark);
+
+    @include mobile {
+      row-gap: 10px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+
+    @include mobile {
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 22px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+
+    &--highlighted {
+      color: var(--color-accent);
+    }
+
+    &--old {
+      color: var(--color-gray);
+      text-decoration: line-through;
+    }
+
+    &-wrapper {
+      display: flex;
+      column-gap: 16px;
+
+      @include mobile {
+        column-gap: 10px;
+      }
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    translate: -50%;
+    width: 80%;
+    padding-block: 13px;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    opacity: 0;
+  }
+}

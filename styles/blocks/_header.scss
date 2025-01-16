@@ -1,0 +1,132 @@
+.header {
+  font-size: 16px;
+
+  &__top {
+    padding: 12px 0;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+
+    @include tablet {
+      display: none;
+    }
+
+    &-wrapper {
+      display: flex;
+    }
+
+    &-list {
+      display: flex;
+      column-gap: 70px;
+      margin-left: auto;
+    }
+
+    &-link {
+      @include hover {
+        opacity: 0.7;
+      }
+    }
+
+    &-button {
+      @include reset-button;
+
+      color: inherit;
+      cursor: pointer;
+
+      @include hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &__logo {
+    margin-right: auto;
+
+    @include tablet {
+      width: 141px;
+    }
+  }
+
+  &__menu {
+    margin-right: auto;
+
+    @include tablet {
+      display: none;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 100px;
+      text-transform: uppercase;
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      height: 40px;
+
+      @include hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__search {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 4px 20px;
+    border: none;
+    border-radius: 50px;
+    color: var(--color-light);
+    background-color: var(--color-dark-basket);
+
+    @include tablet {
+      display: none;
+    }
+
+    @include hover {
+      background-color: var(--color-accent);
+    }
+
+    &-icon {
+      @include flex-center;
+      @include square(32px);
+
+      position: relative;
+
+      &::before {
+        @include square(18px);
+
+        content: "3";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        font-size: 12px;
+        color: var(--color-dark-basket);
+        background-color: var(--color-light);
+      }
+    }
+  }
+
+  &__burger-button {
+    @include tablet-above {
+      display: none;
+    }
+  }
+}

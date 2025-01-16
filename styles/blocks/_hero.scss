@@ -1,0 +1,17 @@
+.hero {
+  &__list {
+    --gridColumns: 4;
+    gap: 50px 40px;
+
+    display: grid;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+
+    @include tablet {
+      --gridColumns: 2;
+    }
+
+    @include mobile {
+      gap: 30px 10px;
+    }
+  }
+}

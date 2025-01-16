@@ -1,0 +1,126 @@
+.footer {
+  color: var(--color-light);
+  background-color: var(--color-dark-footer);
+  font-size: 16px;
+
+  &__container {
+    display: flex;
+
+    @include tablet-above {
+      justify-content: space-between;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 40px 123px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &__branding {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    @include tablet {
+      width: 100%;
+      row-gap: 30px;
+    }
+
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+
+    @include tablet {
+      flex-direction: row;
+      column-gap: 130px;
+      width: 100%;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__services {
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+    color: var(--color-gray);
+
+    @include mobile {
+      row-gap: 70px;
+    }
+  }
+
+  &__payment {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 33px;
+    }
+  }
+
+  &__logo {
+    &-image {
+      @include desktop {
+        width: 217px;
+      }
+
+      @include tablet {
+        width: 180px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__description {
+    &--gray {
+      max-width: 288px;
+      color: var(--color-gray);
+
+      @include tablet {
+        max-width: 378px;
+      }
+
+      @include mobile {
+        order: 7;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &__link {
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+}

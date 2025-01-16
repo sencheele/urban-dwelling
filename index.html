@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Urban Dwelling</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__top-wrapper container">
+        <ul class="header__top-list">
+          <li class="header__top-item">
+            <a class="header__top-link" href="/">
+              Доставка и&nbsp;оплата
+            </a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="/">
+              Гарантия и&nbsp;возврат
+            </a>
+          </li>
+          <li class="header__top-item">
+            <button class="header__top-button">
+              EN
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__bottom container">
+      <a class="header__logo logo" href="/">
+        <img
+          class="logo__image"
+          src="./images/logo.svg"
+          alt="Urban Dwelling"
+          loading="lazy"
+        >
+      </a>
+
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="/">
+              Каталог
+            </a>
+          </li>
+
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="/">
+              О&nbsp;компании
+            </a>
+          </li>
+
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="/">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="header__search search"
+        action=""
+        method="get"
+      >
+        <input class="search__input"
+          type="search"
+          name="search"
+          placeholder="Введите запрос..."
+          aria-label="Поиск"
+        >
+        <button class="search__button"
+          type="submit"
+        >
+          <span class="visually-hidden">
+            Найти
+          </span>
+          <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.1931 20.142C5.18518 20.142 1.10791 16.0647 1.10791 11.0568C1.10791 6.04883 5.18518 1.97156 10.1931 1.97156C15.2011 1.97156 19.2784 6.04883 19.2784 11.0568C19.2784 16.0647 15.2011 20.142 10.1931 20.142ZM10.1931 3.3011C5.912 3.3011 2.43746 6.78451 2.43746 11.0568C2.43746 15.3291 5.912 18.8125 10.1931 18.8125C14.4743 18.8125 17.9488 15.3291 17.9488 11.0568C17.9488 6.78451 14.4743 3.3011 10.1931 3.3011Z" fill="#231815"/>
+            <path d="M19.5 21.0284C19.3316 21.0284 19.1632 20.9664 19.0302 20.8334L17.2575 19.0607C17.0004 18.8036 17.0004 18.3782 17.2575 18.1211C17.5145 17.8641 17.94 17.8641 18.197 18.1211L19.9698 19.8939C20.2268 20.1509 20.2268 20.5764 19.9698 20.8334C19.8368 20.9664 19.6684 21.0284 19.5 21.0284Z" fill="#231815"/>
+          </svg>
+        </button>
+      </form>
+
+      <button class="header__button button"
+        type="button"
+      >
+        <span class="header__button-icon">
+          <svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16673 9.9C1.14893 8.59317 2.19325 7.51901 3.50006 7.5H17.5001C18.8069 7.51901 19.8512 8.59317 19.8334 9.9V20.7C19.8697 23.314 17.7807 25.4627 15.1667 25.5H5.83339C3.21945 25.4627 1.13039 23.314 1.16673 20.7V9.9Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.1667 11.1V6.3C15.203 3.68604 13.114 1.53729 10.5 1.5C7.88608 1.53729 5.79701 3.68604 5.83335 6.3V11.1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>
+          Корзина
+        </span>
+      </button>
+
+      <button class="header__burger-button burger-button"
+        type="button"
+        onclick="mobileOverlay.showModal()">
+        <span class="visually-hidden">
+          Open navigation menu
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section container">
+      <div class="hero">
+        <h1 class="main-title">
+          Результаты поиска
+        </h1>
+
+        <ul class="hero__list">
+          <li class="hero__item">
+            <article class="hero-card">
+              <img class="hero-card__image"
+                src="./images/products/1.jpg"
+                alt="Изображение товара"
+                loading="lazy"
+              >
+
+              <span class="hero-card__special-offer">
+                Акция
+              </span>
+
+              <div class="hero-card__body">
+                <h2 class="hero-card__title">
+                  Встраиваемый светильник Markt
+                </h2>
+
+                <div class="hero-card__price-wrapper">
+                  <span class="hero-card__price hero-card__price--highlighted">
+                    3 490 ₽
+                  </span>
+                  <span class="hero-card__price hero-card__price--old">
+                    5 060 ₽
+                  </span>
+                  <a class="hero-card__link" href="/">
+                    Подробнее
+                  </a>
+                </div>
+
+              </div>
+            </article>
+          </li>
+
+          <li class="hero__item">
+            <article class="hero-card">
+              <img class="hero-card__image"
+                src="./images/products/2.jpg"
+                alt="Изображение товара"
+                loading="lazy"
+              >
+
+              <div class="hero-card__body">
+                <h2 class="hero-card__title">
+                  Линейный светильник ARG
+                </h2>
+
+                <div class="hero-card__price-wrapper">
+                  <span class="hero-card__price">
+                    6 700 ₽
+                  </span>
+                </div>
+
+                <a class="hero-card__link" href="/">
+                  Подробнее
+                </a>
+              </div>
+
+
+            </article>
+          </li>
+
+          <li class="hero__item">
+            <article class="hero-card">
+              <img class="hero-card__image"
+                src="./images/products/3.jpg"
+                alt="Изображение товара"
+                loading="lazy"
+              >
+
+              <span class="hero-card__special-offer">
+                Акция
+              </span>
+
+              <div class="hero-card__body">
+                <h2 class="hero-card__title">
+                  Светодиодный светильник
+                </h2>
+
+                <div class="hero-card__price-wrapper">
+                  <span class="hero-card__price hero-card__price--highlighted">
+                    5 060 ₽
+                  </span>
+                  <span class="hero-card__price hero-card__price--old">
+                    6 060 ₽
+                  </span>
+                </div>
+
+                <a class="hero-card__link" href="/">
+                  Подробнее
+                </a>
+              </div>
+
+
+            </article>
+          </li>
+
+          <li class="hero__item">
+            <article class="hero-card">
+              <img class="hero-card__image"
+                src="./images/products/1.jpg"
+                alt="Изображение товара"
+                loading="lazy"
+              >
+
+              <span class="hero-card__special-offer">
+                Акция
+              </span>
+
+              <div class="hero-card__body">
+                <h2 class="hero-card__title">
+                  Встраиваемый светильник Markt
+                </h2>
+
+                <div class="hero-card__price-wrapper">
+                  <span class="hero-card__price hero-card__price--highlighted">
+                    3 490 ₽
+                  </span>
+                  <span class="hero-card__price hero-card__price--old">
+                    5 060 ₽
+                  </span>
+                </div>
+
+                <a class="hero-card__link" href="/">
+                  Подробнее
+                </a>
+              </div>
+
+
+            </article>
+          </li>
+
+          <li class="hero__item">
+            <article class="hero-card">
+              <img class="hero-card__image"
+                src="./images/products/2.jpg"
+                alt="Изображение товара"
+                loading="lazy"
+              >
+
+              <div class="hero-card__body">
+                <h2 class="hero-card__title">
+                  Линейный светильник ARG
+                </h2>
+
+                <div class="hero-card__price-wrapper">
+                  <span class="hero-card__price">
+                    6 700 ₽
+                  </span>
+                </div>
+
+                <a class="hero-card__link" href="/">
+                  Подробнее
+                </a>
+              </div>
+
+
+            </article>
+          </li>
+
+          <li class="hero__item">
+            <article class="hero-card">
+              <img class="hero-card__image"
+                src="./images/products/3.jpg"
+                alt="Изображение товара"
+                loading="lazy"
+              >
+
+              <span class="hero-card__special-offer">
+                Акция
+              </span>
+
+              <div class="hero-card__body">
+                <h2 class="hero-card__title">
+                  Светодиодный светильник
+                </h2>
+
+                <div class="hero-card__price-wrapper">
+                  <span class="hero-card__price hero-card__price--highlighted">
+                    5 060 ₽
+                  </span>
+                  <span class="hero-card__price hero-card__price--old">
+                    6 060 ₽
+                  </span>
+                </div>
+
+                <a class="hero-card__link" href="/">
+                  Подробнее
+                </a>
+              </div>
+
+
+            </article>
+          </li>
+
+          <li class="hero__item">
+            <article class="hero-card">
+              <img class="hero-card__image"
+                src="./images/products/1.jpg"
+                alt="Изображение товара"
+                loading="lazy"
+              >
+
+              <span class="hero-card__special-offer">
+                Акция
+              </span>
+
+              <div class="hero-card__body">
+                <h2 class="hero-card__title">
+                  Встраиваемый светильник Markt
+                </h2>
+
+                <div class="hero-card__price-wrapper">
+                  <span class="hero-card__price hero-card__price--highlighted">
+                    3 490 ₽
+                  </span>
+                  <span class="hero-card__price hero-card__price--old">
+                    5 060 ₽
+                  </span>
+                </div>
+
+                <a class="hero-card__link" href="/">
+                  Подробнее
+                </a>
+              </div>
+
+
+            </article>
+          </li>
+
+          <li class="hero__item">
+            <article class="hero-card">
+              <img class="hero-card__image"
+                src="./images/products/2.jpg"
+                alt="Изображение товара"
+                loading="lazy"
+              >
+
+              <div class="hero-card__body">
+                <h2 class="hero-card__title">
+                  Линейный светильник ARG
+                </h2>
+
+                <div class="hero-card__price-wrapper">
+                  <span class="hero-card__price">
+                    6 700 ₽
+                  </span>
+                </div>
+
+                <a class="hero-card__link" href="/">
+                  Подробнее
+                </a>
+              </div>
+
+
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section">
+    <div class="footer__container  container">
+      <div class="footer__branding">
+        <a class="footer__logo logo" href="/">
+          <img
+            class="footer__logo-image logo__image"
+            src="./images/logo-light.svg"
+            alt="Urban Dwelling"
+            loading="lazy"
+          >
+        </a>
+        <div class="footer__description footer__description--gray">
+          <p>
+            Этот сайт защищен от&nbsp;спама службой reCAPTCHA Google.
+            <a class="footer__description-link" href="/">
+              Политика конфиденциальности/Условия предоставления услуг
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__info">
+        <div class="footer__wrapper">
+          <h2 class="footer__title">
+            Адрес
+          </h2>
+
+          <div class="footer__description">
+            <p>
+              Текст, Текст, Текст
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__wrapper">
+          <h2 class="footer__title">
+            Контакты
+          </h2>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              Email:
+              <a class="footer__link" href="mailto:urban.dwelling@yandex.com">
+                urban.dwelling@yandex.com
+              </a>
+            </li>
+
+            <li class="footer__item">
+              Телефон:
+              <a class="footer__link" href="tel:+79999999999">
+                8 (999) 999-99-99
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__services footer__wrapper">
+        <h2 class="footer__title">
+          Услуги
+        </h2>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="/">
+              Каталог
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="/">
+              О&nbsp;компании
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="/">
+              Контакты
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="/">
+              Доставка и&nbsp;оплата
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="/">
+              Гарантия и&nbsp;возврат
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__details">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="/">
+              Публичная оферта
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="/">
+              Политика персональных данных
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer__payment-list">
+          <li class="footer__payment-item">
+            <img class="footer__payment-image" src="./images/payment/1.svg" alt="Мир" loading="lazy">
+          </li>
+
+          <li class="footer__payment-item">
+            <img class="footer__payment-image" src="./images/payment/2.svg" alt="Visa" loading="lazy">
+          </li>
+
+          <li class="footer__payment-item">
+            <img class="footer__payment-image" src="./images/payment/3.svg" alt="MasterCard" loading="lazy">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="mobile-overlay" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button
+        class="mobile-overlay__close-button cross-button"
+        type="submit"
+      >
+        <span class="visually-hidden">
+          Close navigation menu
+        </span>
+      </button>
+    </form>
+
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="menu-overlay__item">
+          <a class="menu-overlay__link" href="/">
+            Доставка и&nbsp;оплата
+          </a>
+        </li>
+
+        <li class="menu-overlay__item">
+          <a class="menu-overlay__link" href="/">
+            Гарантия и&nbsp;возврат
+          </a>
+        </li>
+
+        <li class="menu-overlay__item">
+          <a class="menu-overlay__link" href="/">
+            EN
+          </a>
+        </li>
+
+        <li class="menu-overlay__item">
+          <a class="menu-overlay__link" href="/">
+            Каталог
+          </a>
+        </li>
+
+        <li class="menu-overlay__item">
+          <a class="menu-overlay__link" href="/">
+            О&nbsp;компании
+          </a>
+        </li>
+
+        <li class="menu-overlay__item">
+          <a class="menu-overlay__link" href="/">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </div>
+  </dialog>
+</body>
+</html>
